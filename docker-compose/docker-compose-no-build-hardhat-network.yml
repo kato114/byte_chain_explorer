@@ -30,7 +30,7 @@ services:
       - ./envs/common-blockscout.env
     environment:
       ETHEREUM_JSONRPC_VARIANT: "geth"
-      ETHEREUM_JSONRPC_HTTP_URL: http://185.99.197.116:8545/
+      ETHEREUM_JSONRPC_HTTP_URL: https://test-rpc.bytexc.org/
       ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
       INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER: "true"
       DATABASE_URL: postgresql://postgres:@host.docker.internal:7432/blockscout?ssl=false

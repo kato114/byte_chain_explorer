@@ -30,8 +30,8 @@ services:
       - ./envs/common-blockscout.env
     environment:
       ETHEREUM_JSONRPC_VARIANT: "erigon"
-      ETHEREUM_JSONRPC_HTTP_URL: http://185.99.197.116:8545/
-      ETHEREUM_JSONRPC_TRACE_URL: http://185.99.197.116:8545/
+      ETHEREUM_JSONRPC_HTTP_URL: https://test-rpc.bytexc.org/
+      ETHEREUM_JSONRPC_TRACE_URL: https://test-rpc.bytexc.org/
       DATABASE_URL: postgresql://postgres:@host.docker.internal:7432/blockscout?ssl=false
       ECTO_USE_SSL: "false"
       SECRET_KEY_BASE: "56NtB48ear7+wMSf0IQuWDAAazhpb31qyc7GiyspBP2vh7t5zlCsF5QDv76chXeN"
